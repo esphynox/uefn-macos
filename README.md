@@ -74,6 +74,6 @@ Currently, Windows version of VS Code does not work under CrossOver, so what can
 1. Enter in "cmd.exe": `set PATH=%PATH%;C:\Program Files\Fortnite\FortniteGame\Binaries\Win64`
 1. You can use URC CLI now
   
-## Content Browser hangs on browsing or search
+## Content Browser hangs on browsing props
 
-Unfortunately I did not found for this issue yet. Somitimes it just works for me, and sometimes and it unhangs after few minutes. Please let me know if you find out something!
+Unfortunately I did not found direct solution for this issue yet. Only thing I can suggest is browse props via Fortnite client running on your device and paste assets from there. 
