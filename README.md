@@ -9,6 +9,7 @@
 
 ## Software
 
+1. macOS Sonoma (or higher)
 1. [Heroic Launcher](https://heroicgameslauncher.com/)
 1. [Codeweaver's Crossover](https://www.codeweavers.com/crossover) (you can download trial, to see if performance is good enough for you)
 
