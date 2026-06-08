@@ -1,5 +1,11 @@
 # Known Issues
 
+## URC shows "Validation failed" in UEFN editor
+
+UEFN uses a Rust QUIC library (Quinn) for its revision control transport. Wine's `ws2_32.dll` returns errors for socket options Quinn requires during UDP setup — Quinn treats these as fatal and aborts before connecting.
+
+Fix: The community [source patch](https://github.com/griffi-gh/wine-uefn/blob/master/stub-ecn.patch) requires recompiling Wine — which does not work with CrossOver. The equivalent fix can be applied as a binary patch directly to CrossOver's `ws2_32.dll` — locating the broken handler code and overwriting it with bytes that return success instead.
+
 ## I cannot open my Verse code from UEFN
 
 Currently, Windows version of VS Code does not work under CrossOver, so what can you do is install VS Code for macOS, and install "Syntax Support for Verse" plugin for it and open it at path: 
